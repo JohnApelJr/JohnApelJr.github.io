@@ -13,13 +13,18 @@ It highlights my applied data science, machine learning, and research work devel
 ## 🧠 Focus Areas
 - Natural Language Processing (NLP)  
 - Deep Learning for Optical Character Recognition (OCR)  
-- Predictive Modeling & Classification  
+- Health Data Analytics & Predictive Modeling  
 - Data Visualization & Storytelling  
-- SQL, Python, and Applied Machine Learning  
+- Python, SQL, and Applied Machine Learning  
 
 ---
 
 ## 🚀 Featured Projects
+
+### [Preventative Pulse – Health Risk Prediction Dashboard](projects/preventative-pulse.html)
+Developed an **interactive predictive analytics dashboard** for early detection and prevention of chronic disease.  
+Integrated **CDC BRFSS data**, **logistic regression**, and **ensemble learning** to identify high-risk individuals and model intervention outcomes.  
+Focused on **public health intelligence**, data ethics, and actionable insights for policy and wellness programs.
 
 ### [OCR with Deep Learning (CRNN Model)](projects/ocr-deep-learning.html)
 Built a **Convolutional Recurrent Neural Network (CRNN)** trained on the **MJSynth (Synth90k)** dataset.  
@@ -60,7 +65,8 @@ Pull requests and collaboration ideas are welcome — whether for design suggest
 ---
 
 ## 📬 Contact
-**John “Jeep” Apel, Jr.**  
+**John Apel, Jr.**  
 📍 Asheville, NC  
 📧 [johnapeljr@gmail.com](mailto:johnapeljr@gmail.com)  
 🔗 [GitHub](https://github.com/JohnApelJr) | [LinkedIn](https://www.linkedin.com/in/johnapel) | [Portfolio](https://johnapeljr.github.io)
+
