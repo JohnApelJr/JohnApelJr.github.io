@@ -33,13 +33,6 @@ Benchmarked against **Tesseract** and **Google Vision AI**, achieving high accur
 ### [Sentiment Analysis using NLP](projects/sentiment-analysis.html)
 Developed an **NLP pipeline** using **feature engineering**, **NLTK**, and **logistic regression** classifiers to predict sentiment polarity and visualize token-level insights.
 
-### [Bank Marketing Campaign Classifier](projects/bank-marketing.html)
-Applied **Gradient Boosting** and **XGBoost** models to predict term deposit subscriptions.  
-Performed extensive **EDA**, **SMOTE balancing**, and **hyperparameter tuning** to optimize the F1 score.
-
-### [Heart Disease Prediction](projects/heart-disease.html)
-Analyzed CDC **BRFSS** health survey data (2020 & 2022) to model heart disease risk using logistic regression and ensemble learning.  
-Identified key risk factors such as **age, stroke history, and comorbidities**.
 
 ### [Process Improvement – Calorie Burn Optimization](projects/process-improvement.html)
 Implemented a **DMAIC (Lean Six Sigma)** framework to reduce weekly calorie variance and improve exercise consistency.  
