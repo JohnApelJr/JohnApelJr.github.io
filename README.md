@@ -37,34 +37,31 @@ This site highlights applied work from my M.S. in Applied Data Science and indep
 > Add a short **README** in each project folder with: problem → data → methods → results → what’s next.
 
 ### 1) Process Improvement (DMAIC)
-- **Folder:** `/projects/process-improvement/`
+- **Folder:** `/process-improvement/`
 - **Highlights:** Executive storyboard (1 slide) + 5–15 backup slides, EDA, confidence intervals, sample size, time-of-day effects.
 - **Artifacts:** `storyboard.pptx`, `backup-slides/`, `notebooks/`, `figures/`
 
 ### 2) Membership Database (SQL)
-- **Folder:** `/projects/membership-database/`
+- **Folder:** `/membership-database/`
 - **Highlights:** `p_upsert_major`, `p_place_bid`, `p_rate_user`, triggers, normalized schema, constraints.
 - **Artifacts:** `schema.sql`, `procedures.sql`, `triggers.sql`, `tests/`
 
 ### 3) Scripting (Automation & Data Ops)
-- **Folder:** `/projects/scripting/`
+- **Folder:** `/scripting/`
 - **Highlights:** ETL utilities, batch processing, data validation, CLI helpers.
 - **Artifacts:** `scripts/`, `README.md`, `examples/`
 
 ### 4) Machine Learning (Classification)
-- **Folder:** `/projects/machine-learning/`
+- **Folder:** `/machine-learning/`
 - **Highlights:** Gradient Boosting/XGBoost, PCA, SMOTE, GridSearchCV, model cards, interpretability.
 - **Artifacts:** `notebooks/`, `models/`, `reports/`
 
 ### 5) Deep Learning (OCR / CRNN)
-- **Folder:** `/projects/deep-learning-ocr/`
+- **Folder:** `/deep-learning-ocr/`
 - **Highlights:** CRNN training on MJSynth (Synth90k), augmentation, vs Tesseract/Google Vision.
 - **Artifacts:** `notebooks/`, `results/`, `samples/`, `paper/`
 
-### 6) Preventative Pulse (Concept)
-- **Folder:** `/projects/preventative-pulse/`
-- **Highlights:** Product brief, architecture, model roadmap (CV + nutrition), data collection plan.
-- **Artifacts:** `README.md`, `mockups/`, `roadmap.md`
+
 
 ---
 
