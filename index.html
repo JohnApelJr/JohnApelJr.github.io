@@ -1,33 +1,126 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>John Apel Jr. — Data Science Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data science portfolio of John Apel Jr.: ML, deep learning, ETL, SQL database design, and process improvement." />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="John Apel Jr. — Data Science Portfolio">
+  <meta property="og:description" content="ML, Deep Learning, ETL, SQL, Process Improvement">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://johnapeljr.github.io">
+
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h1 { margin-bottom: 0.25rem; }
-    .sub { color: #555; margin-top: 0; }
-    li { margin: .4rem 0; }
+    :root{
+      --fg:#111; --sub:#555; --link:#0b74d1; --bg:#fff; --card:#fafafa; --border:#eaeaea;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --fg:#f3f3f3; --sub:#bbb; --link:#7bb8ff; --bg:#0e0e10; --card:#16161a; --border:#2a2a2e; }
+    }
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover, a:focus{ text-decoration:underline; outline:none; }
+    .wrap{ max-width:920px; margin:0 auto; padding:32px 16px 56px; }
+    header{ text-align:center; margin-bottom:24px; }
+    h1{ font-size:clamp(28px,4vw,40px); margin:.25rem 0 .5rem; letter-spacing:.2px; }
+    .links{ color:var(--sub); display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:6px; }
+    .links a{ color:var(--link); }
+    .tagline{ color:var(--sub); margin:0 0 28px; font-size:15px; }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px 16px;
+      transition:transform .08s ease, box-shadow .08s ease, border-color .2s ease;
+    }
+    .card:hover{ transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.08); }
+    .card h3{ margin:.25rem 0 .35rem; font-size:18px; }
+    .meta{ color:var(--sub); font-size:13px; margin:0 0 10px; }
+    .card p{ margin:.4rem 0 1rem; font-size:15px; }
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{
+      border:1px solid var(--border); background:transparent; color:var(--link); padding:8px 12px;
+      border-radius:10px; font-size:14px; text-decoration:none;
+    }
+    .btn:hover{ border-color:var(--link); }
+    footer{ text-align:center; color:var(--sub); font-size:14px; margin-top:36px; }
+    .top-links{ margin-bottom:28px; }
+    .pill{
+      display:inline-block; padding:4px 10px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--sub);
+    }
+    /* optional avatar */
+    .avatar{ width:96px; height:96px; border-radius:50%; object-fit:cover; border:1px solid var(--border); margin:0 auto 12px; display:block; }
   </style>
 </head>
 <body>
-  <h1>John Apel Jr. — Data Science Portfolio</h1>
-  <p class="sub">
-    <a href="https://github.com/JohnApelJr">GitHub</a> ·
-    <a href="https://JohnApelJr.github.io">Portfolio</a> ·
-    <a href="https://linkedin.com/in/john-apel-76700154">LinkedIn</a>
-  </p>
+  <main class="wrap">
+    <header>
+      Optional: place /assets/1516716052090.jpeg in your repo and uncomment the next line 
+      <img class="avatar" src="/assets/profile.jpg" alt="John Apel Jr."> 
+      <h1>John Apel Jr. — Data Science Portfolio</h1>
+      <div class="links top-links">
+        <a href="mailto:johnapeljr@gmail.com">Email</a> ·
+        <a href="https://github.com/JohnApelJr" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://linkedin.com/in/john-apel-76700154" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://johnapeljr.github.io" aria-current="page">Portfolio</a>
+      </div>
+      <p class="tagline">Predictive modeling · Deep learning · ETL & data engineering · SQL database design · Process improvement</p>
+      <span class="pill">Public artifact links go to GitHub folders (Option A)</span>
+    </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Process Improvement (DMAIC)</strong> — <a href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/process%20improvement" target="_blank" rel="noopener">GitHub folder</a></li>
-    <li><strong>Membership Database (SQL Server)</strong> — <a href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/membership%20database/Group2_W2SO_Membership_Database" target="_blank" rel="noopener">GitHub folder</a></li>
-    <li><strong>Scripting / ETL (NBA)</strong> — <a href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/scripting" target="_blank" rel="noopener">GitHub folder</a></li>
-    <li><strong>Machine Learning (Preventive Pulse)</strong> — <a href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/machine%20learning" target="_blank" rel="noopener">GitHub folder</a></li>
-    <li><strong>Deep Learning (CRNN OCR)</strong> — <a href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/deep%20learning" target="_blank" rel="noopener">GitHub folder</a></li>
-  </ul>
+    <section>
+      <div class="grid">
+        <article class="card">
+          <h3>Process Improvement (DMAIC)</h3>
+          <p class="meta">MBC-638 · Statistics · Six Sigma</p>
+          <p>Personal fitness optimization using Six Sigma DMAIC, regression, and hypothesis testing; +200 cal/day improvement validated via two-sample t-test.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/process%20improvement" target="_blank" rel="noopener">GitHub folder</a>
+          </div>
+        </article>
 
-  <p>Contact: johnapeljr@gmail.com</p>
+        <article class="card">
+          <h3>Membership Database (SQL Server)</h3>
+          <p class="meta">IST-659 · ER/3NF · Triggers · Governance</p>
+          <p>Normalized 3NF schema (8 entities) with T-SQL triggers and views for LARC (150+ members); migrated from Access → SQL Server for scalability and integrity.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/membership%20database/Group2_W2SO_Membership_Database" target="_blank" rel="noopener">GitHub folder</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Scripting / ETL (NBA)</h3>
+          <p class="meta">IST-652 · Python ETL · APIs · Viz</p>
+          <p>Automated pipeline integrating <code>nba_api</code> + Kaggle; 1,200+ API calls, 150k records, fuzzy matching, and decade-level trend visualizations.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/scripting" target="_blank" rel="noopener">GitHub folder</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Machine Learning (Preventive Pulse)</h3>
+          <p class="meta">IST-707 · BRFSS · SMOTE · PCA</p>
+          <p>Heart-disease prediction pipeline; F1-macro ≈ 0.764, ROC-AUC ≈ 0.84 with class-imbalance handling and fairness analysis across age subgroups.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/machine%20learning" target="_blank" rel="noopener">GitHub folder</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Deep Learning (CRNN OCR)</h3>
+          <p class="meta">IST-691 · CNN + BiLSTM · CTC</p>
+          <p>CRNN model for OCR with augmentation and benchmarking; 91% printed-text accuracy and comparisons vs Google Vision & Azure OCR.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/deep%20learning" target="_blank" rel="noopener">GitHub folder</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 John Apel Jr. · <a href="mailto:johnapeljr@gmail.com">Contact</a>
+    </footer>
+  </main>
 </body>
 </html>
