@@ -47,76 +47,100 @@
     .btn:hover{ border-color:var(--link); }
     footer{ text-align:center; color:var(--sub); font-size:14px; margin-top:36px; }
     .top-links{ margin-bottom:28px; }
-    .pill{
-      display:inline-block; padding:4px 10px; border:1px solid var(--border); border-radius:999px; font-size:12px; color:var(--sub);
-    }
-    /* optional avatar */
     .avatar{ width:96px; height:96px; border-radius:50%; object-fit:cover; border:1px solid var(--border); margin:0 auto 12px; display:block; }
   </style>
 </head>
+
 <body>
-  <main class="wrap">
-    <header> 
-      <img class="avatar" src="/assets/profile.jpg" alt="John Apel Jr."> 
-      <h1>John Apel Jr. — Data Science Portfolio</h1>
-      <div class="links top-links">
-        <a href="mailto:johnapeljr@gmail.com">Email</a> ·
-        <a href="https://github.com/JohnApelJr" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="https://linkedin.com/in/john-apel-76700154" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="https://johnapeljr.github.io" aria-current="page">Portfolio</a>
-      </div>
-      <p class="tagline">Predictive modeling · Deep learning · ETL & data engineering · SQL database design · Process improvement</p>
-    </header>
+<main class="wrap">
 
-    <section>
-      <div class="grid">
-        <article class="card">
-          <h3>Process Improvement (DMAIC)</h3>
-          <p class="meta">MBC-638 · Statistics · Six Sigma</p>
-          <p>Personal fitness optimization using Six Sigma DMAIC, regression, and hypothesis testing; +200 cal/day improvement validated via two-sample t-test.</p>
-          <div class="actions">
-            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/process%20improvement" target="_blank" rel="noopener">GitHub folder</a>
-          </div>
-        </article>
+<header>
+<img class="avatar" src="/assets/profile.jpg" alt="John Apel Jr.">
+<h1>John Apel Jr. — Data Science Portfolio</h1>
 
-        <article class="card">
-          <h3>Membership Database (SQL Server)</h3>
-          <p class="meta">IST-659 · ER/3NF · Triggers · Governance</p>
-          <p>Normalized 3NF schema (8 entities) with T-SQL triggers and views for LARC (150+ members); migrated from Access → SQL Server for scalability and integrity.</p>
-          <div class="actions">
-            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/membership%20database/Group2_W2SO_Membership_Database" target="_blank" rel="noopener">GitHub folder</a>
-          </div>
-        </article>
+<div class="links top-links">
+<a href="mailto:johnapeljr@gmail.com">Email</a> ·
+<a href="https://github.com/JohnApelJr" target="_blank">GitHub</a> ·
+<a href="https://linkedin.com/in/john-apel-76700154" target="_blank">LinkedIn</a> ·
+<a href="https://johnapeljr.github.io">Portfolio</a>
+</div>
 
-        <article class="card">
-          <h3>Geospatial Analytics (Chronic Disease)</h3>
-          <p class="meta">CDC PLACES · Census ACS · GeoPandas · Folium</p>
-          <p>ETL pipeline integrating 2 federal data sources across 2,956 counties; identified 326 "triple burden" counties where diabetes, uninsured rates, and poverty converge. Interactive choropleth maps + WNC regional deep dive.</p>
-          <div class="actions">
-            <a class="btn" href="https://github.com/JohnApelJr/chronic-disease-geospatial-pipeline" target="_blank" rel="noopener">GitHub repo</a>
-            <a class="btn" href="https://github.com/JohnApelJr/chronic-disease-geospatial-pipeline/blob/main/notebooks/analysis.ipynb" target="_blank" rel="noopener">Notebook</a>
-          </div>
-        </article>
-        <article class="card">
-          <h3>Machine Learning (Preventive Pulse)</h3>
-          <p class="meta">IST-707 · BRFSS · SMOTE · PCA</p>
-          <p>Heart-disease prediction pipeline; F1-macro ≈ 0.764, ROC-AUC ≈ 0.84 with class-imbalance handling and fairness analysis across age subgroups.</p>
-          <div class="actions">
-            <a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/machine%20learning" target="_blank" rel="noopener">GitHub folder</a>
-          </div>
-        </article>
+<p class="tagline">
+Predictive modeling · Deep learning · ETL & data engineering · SQL database design · Process improvement
+</p>
+</header>
 
-        <article class="card">
-          <h3>Deep Learning (Healthcare — Coming Soon)</h3>
-          <p class="meta">CNN · TensorFlow · Medical Imaging or Clinical NLP</p>
-          <p>Healthcare-focused deep learning project in development. Applying neural network architectures to clinical data for classification and prediction.</p>
-          <div class="actions">
-          </div>
-        </article>    </section>
+<section>
+<div class="grid">
 
-    <footer>
-      © 2025 John Apel Jr. · <a href="mailto:johnapeljr@gmail.com">Contact</a>
-    </footer>
-  </main>
+<!-- NEW FLAGSHIP PROJECT -->
+<article class="card">
+<h3>Healthcare Access Analytics (NC Pediatric Specialists)</h3>
+<p class="meta">NPPES · Census ACS · GeoPandas · Folium · GIS</p>
+<p>
+Built a reproducible geospatial pipeline mapping pediatric specialist supply vs. child population across North Carolina’s 100 counties. Identified 67% of counties as severe access deserts and 8 counties with zero pediatric specialists.
+</p>
+<div class="actions">
+<a class="btn" href="https://github.com/JohnApelJr/nc-pediatric-access-pipeline" target="_blank">GitHub repo</a>
+<a class="btn" href="https://johnapeljr.github.io/nc-pediatric-access-pipeline/maps/nc_pediatric_access_interactive.html" target="_blank">Interactive map</a>
+</div>
+</article>
+
+<!-- DMAIC -->
+<article class="card">
+<h3>Process Improvement (DMAIC)</h3>
+<p class="meta">MBC-638 · Statistics · Six Sigma</p>
+<p>Personal fitness optimization using Six Sigma DMAIC, regression, and hypothesis testing; +200 cal/day improvement validated via two-sample t-test.</p>
+<div class="actions">
+<a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/process%20improvement" target="_blank">GitHub folder</a>
+</div>
+</article>
+
+<!-- SQL DATABASE -->
+<article class="card">
+<h3>Membership Database (SQL Server)</h3>
+<p class="meta">IST-659 · ER/3NF · Triggers · Governance</p>
+<p>Normalized 3NF schema (8 entities) with T-SQL triggers and views for LARC (150+ members); migrated from Access → SQL Server for scalability and integrity.</p>
+<div class="actions">
+<a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/membership%20database/Group2_W2SO_Membership_Database" target="_blank">GitHub folder</a>
+</div>
+</article>
+
+<!-- GEO ANALYTICS -->
+<article class="card">
+<h3>Geospatial Analytics (Chronic Disease)</h3>
+<p class="meta">CDC PLACES · Census ACS · GeoPandas · Folium</p>
+<p>ETL pipeline integrating 2 federal data sources across 2,956 counties; identified 326 “triple burden” counties where diabetes, uninsured rates, and poverty converge.</p>
+<div class="actions">
+<a class="btn" href="https://github.com/JohnApelJr/chronic-disease-geospatial-pipeline" target="_blank">GitHub repo</a>
+<a class="btn" href="https://github.com/JohnApelJr/chronic-disease-geospatial-pipeline/blob/main/notebooks/analysis.ipynb" target="_blank">Notebook</a>
+</div>
+</article>
+
+<!-- ML -->
+<article class="card">
+<h3>Machine Learning (Preventive Pulse)</h3>
+<p class="meta">IST-707 · BRFSS · SMOTE · PCA</p>
+<p>Heart-disease prediction pipeline; F1-macro ≈ 0.764, ROC-AUC ≈ 0.84 with class-imbalance handling and fairness analysis across age subgroups.</p>
+<div class="actions">
+<a class="btn" href="https://github.com/JohnApelJr/JohnApelJr.github.io/tree/main/machine%20learning" target="_blank">GitHub folder</a>
+</div>
+</article>
+
+<!-- DL COMING SOON -->
+<article class="card">
+<h3>Deep Learning (Healthcare — Coming Soon)</h3>
+<p class="meta">CNN · TensorFlow · Medical Imaging / Clinical NLP</p>
+<p>Healthcare-focused deep learning project in development applying neural network architectures to clinical data.</p>
+</article>
+
+</div>
+</section>
+
+<footer>
+© 2025 John Apel Jr. · <a href="mailto:johnapeljr@gmail.com">Contact</a>
+</footer>
+
+</main>
 </body>
 </html>
