@@ -27,7 +27,7 @@
     .wrap{ max-width:920px; margin:0 auto; padding:32px 16px 56px; }
     header{ text-align:center; margin-bottom:24px; }
     h1{ font-size:clamp(28px,4vw,40px); margin:.25rem 0 .5rem; letter-spacing:.2px; }
-    .links{ color:var(--sub); display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:6px; }
+    .links{ color:var(--sub); display:flex; gap:12px; justify-content:center; flex-wrap:wrap; align-items:center; margin-bottom:6px; }
     .links a{ color:var(--link); }
     .tagline{ color:var(--sub); margin:0 0 28px; font-size:15px; }
     .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
@@ -45,7 +45,14 @@
       border-radius:10px; font-size:14px; text-decoration:none;
     }
     .btn:hover{ border-color:var(--link); }
+    .copy-btn{
+      border:1px solid var(--border); background:transparent; color:var(--link); padding:4px 10px;
+      border-radius:8px; font-size:13px; cursor:pointer; font-family:inherit;
+    }
+    .copy-btn:hover{ border-color:var(--link); }
+    .copy-btn.copied{ color:#1a9c5c; border-color:#1a9c5c; }
     footer{ text-align:center; color:var(--sub); font-size:14px; margin-top:36px; }
+    .footer-links{ display:flex; gap:8px; justify-content:center; align-items:center; flex-wrap:wrap; margin-top:6px; }
     .top-links{ margin-bottom:28px; }
     .avatar{ width:96px; height:96px; border-radius:50%; object-fit:cover; border:1px solid var(--border); margin:0 auto 12px; display:block; }
   </style>
@@ -59,7 +66,9 @@
 <h1>John Apel Jr. — Data Science Portfolio</h1>
 
 <div class="links top-links">
-<a href="mailto:johnapeljr@gmail.com">Email</a> ·
+<a href="mailto:johnapeljr@gmail.com">johnapeljr@gmail.com</a>
+<button class="copy-btn" onclick="copyEmail(this)">Copy</button>
+·
 <a href="https://github.com/JohnApelJr" target="_blank" rel="noopener noreferrer">GitHub</a> ·
 <a href="https://linkedin.com/in/john-apel-76700154" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
 <a href="https://johnapeljr.github.io">Portfolio</a>
@@ -182,9 +191,24 @@ Production-deployed accountability platform grading Mississippi state legislator
 </section>
 
 <footer>
-© 2026 John Apel Jr. · <a href="mailto:johnapeljr@gmail.com">Contact</a>
+© 2026 John Apel Jr.
+<div class="footer-links">
+<a href="mailto:johnapeljr@gmail.com">johnapeljr@gmail.com</a>
+<button class="copy-btn" onclick="copyEmail(this)">Copy</button>
+</div>
 </footer>
 
 </main>
+
+<script>
+function copyEmail(btn){
+  navigator.clipboard.writeText('johnapeljr@gmail.com').then(()=>{
+    const original = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent = original; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 </body>
 </html>
